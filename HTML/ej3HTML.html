@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 HTML 2 CSS</title>
+    <link rel="stylesheet" href="/CSS/ej2CSS.css">
+</head>
+
+<body>
+    <form method="GET" action=".">
+        Búsqueda <input type="search" name="serch" id="serch" disabled>
+    </form>
+
+
+    <form>
+        <fieldset class="fieldsetdark">
+            <legend>Información de Contacto</legend>
+            <p>
+                <label for="name">
+                Nombre: <input type="text" name="nombre" id="name" autofocus required>
+                </label>
+            </p>
+
+            <p>
+                <label for="email">
+                E-mail: <input type="email" name="email" id="email" required>
+                </label>
+            </p>
+
+            <p>
+                <label for="tel">
+                Teléfono: <input type="tel" name="tel" id="tel" value="+34 697 345 842" maxlength="12" pattern="[0-9]{12}" readonly>
+                </label>
+            </p>
+
+            <p>
+                <label for="url">
+                URL: <input type="url" name="url" id="url" placeholder="Inseta la URL de tu página web personal">
+                </label>
+            </p>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Fecha de Nacimiento</legend>
+
+            <p>
+                <label for="date">
+                    Fecha <input type="date" name="date" id="date">
+                </label>
+            </p>
+
+            <p>
+                <label for="time">
+                    Tiempo <input type="time" name="time" id="time">
+                </label>
+            </p>
+
+            <p>
+                <label for="datetime">
+                    Fecha y Hora <input type="datetime-local" name="datetime" id="datetime">
+                </label>
+            </p>
+
+            <p>
+                <label for="week">
+                    Semana <input type="week" name="week" id="week">
+                </label>
+            </p>
+
+            <p>
+                <label for="month">
+                    Mes <input type="month" name="month" id="month">
+                </label>
+            </p>
+
+        </fieldset>
+
+        <fieldset class="fieldsetdark">
+            <legend>Preferencias</legend>
+
+            <p>
+                <label for="number">
+                   Escribe tu número favorito <input type="number" name="number" id="number" min="-10" max="5" step="1">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Selecciona tu color favorito
+                    <select name="color-favorito" id="color">
+
+                        <optgroup label="Colores">
+                            <option value="green">Verde</option>
+                            <option value="red">Rojo</option>
+                            <option value="blue">Azul</option>
+                            <option value="yellow">Amarillo</option>
+                            <option value="gray">Gris</option>
+                            <option value="black">Negro</option>
+                            <option value="brown">Marrón</option>
+                            <option value="purple">Violeta</option>
+                            <option value="orange">Naranja</option>
+                            <option value="turquoise">Turquesa</option>
+                            <option value="pink">Rosa</option>
+                        </optgroup>
+
+                    </select>
+            
+                </label>
+            </p>
+
+        </fieldset>
+
+    </form>
+
+    <footer>
+        <button class="button" type="submit" formmethod="GET">Enviar Formulario</button>
+    </footer>
+
+</body>
+
+</html>

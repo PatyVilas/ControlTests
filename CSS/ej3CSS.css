@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    padding: 2rem;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.header h1 h2 {
+    margin-bottom: 1rem;
+}
+
+.header h2 {
+    font-weight: normal;
+}
+
+.header p {
+    font-size: 0.8rem;
+}
+
+.figure img {
+    width: 100%;
+}
+
+main section figure,
+main section p {
+    margin-bottom: 1rem;
+}
+
+.section {
+    margin-bottom: 1rem;
+}
+
+.section h3 {
+    color: gray;
+    border-bottom: 1px solid gray;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+main fieldset {
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+main label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+main input,
+main textarea {
+    width: 100%;
+    background-color: gray;
+    padding: 0.5rem;
+    border: 0;
+}
+
+main textarea {
+    height: 6rem;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 2rem;
+    border: none;
+}
+
+@media (min-width: 700px) {
+    html {
+        font-size: 20px;
+    }
+    .header {
+        text-align: left;
+        padding: 4rem 2rem;
+    }
+    main {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .figure {
+        margin: 0 0 1rem 1rem;
+    }
+    .figure img {
+        width: 60%;
+        float: right;
+    }
+}
